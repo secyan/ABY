@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 project(ABY LANGUAGES CXX)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 if (CMAKE_COMPILER_IS_GNUCXX AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 8.0)
     message(FATAL_ERROR "ABY requires at least g++-8")
 endif()
